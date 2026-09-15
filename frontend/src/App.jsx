@@ -8,7 +8,7 @@ function App() {
 
   // Get books from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/books")
+    fetch("https://book-6tuh.onrender.com/api/books")
       .then((response) => response.json())
       .then((data) => {
         setBooks(data);
@@ -25,7 +25,7 @@ function App() {
       return;
     }
 
-    fetch("http://localhost:5000/api/books", {
+    fetch("https://book-6tuh.onrender.com/api/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
